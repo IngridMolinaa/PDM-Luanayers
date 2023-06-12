@@ -52,7 +52,7 @@ class Conversas extends StatelessWidget {
           title: Text("@Ingridayers"),
           leading: CircleAvatar(
             backgroundImage: NetworkImage(
-                'https://images.unsplash.com/photo-1685725083464-26cab8f2da1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80'),
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpUB_M5_VzdCGkKtHGEL81avAeynFNF_ysBNK3U2s--_lGxiwbkRrkos9PowQOjIU_Uac&usqp=CAU'),
           ),
           trailing: Icon(
             Icons.more_vert,
@@ -65,20 +65,28 @@ class Conversas extends StatelessWidget {
           height: 250,
         ),
         ListTile(
-            leading: Row(children: [
-          Icon(
-            Icons.favorite_outline,
-            size: 30,
+          leading: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(
+                Icons.favorite_outline,
+                size: 30,
+              ),
+              Icon(
+                Icons.chat_outlined,
+                size: 30,
+              ),
+              Icon(
+                Icons.favorite_outline,
+                size: 30,
+              ),
+            ],
           ),
-          Icon(
-            Icons.chat,
-            size: 30,
-          ),
-          Icon(
-            Icons.favorite_outline,
-            size: 30,
-          ),
-        ])),
+          trailing: Icon(
+                Icons.grade_outlined,
+                size: 30,
+              ),
+        ),
         ListTile(
           title: Text("Fulano"),
           leading: CircleAvatar(
@@ -96,31 +104,31 @@ class Conversas extends StatelessWidget {
           height: 250,
         ),
         ListTile(
-            leading: Row(children: [
+            leading: Row(mainAxisSize: MainAxisSize.min, children: [
           Icon(
             Icons.favorite_outline,
             size: 30,
           ),
           Icon(
-            Icons.chat,
+            Icons.chat_outlined,
             size: 30,
           ),
           Icon(
             Icons.favorite_outline,
             size: 30,
           ),
-        ])),
-        ListTile(
-          title: Text("Amor"),
-          leading: CircleAvatar(
-            backgroundImage: NetworkImage(
-                'https://plus.unsplash.com/premium_photo-1663013666806-d515882eaa30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'),
-          ),
-          trailing: Text("00:49"),
+          
+        ],
         ),
-        ListTile(
-          leading: Icon(Icons.favorite_outline, size: 30),
+        trailing: Icon(
+                Icons.grade_outlined,
+                size: 30,
+              ),
+
         ),
+        
+        
+        
       ],
     );
   }
