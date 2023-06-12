@@ -15,25 +15,26 @@ class PaginaInicial extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
   
-          backgroundColor: Color.fromARGB(255, 56, 127, 107),
+          backgroundColor: Color.fromARGB(250, 0, 0, 0),
 
-          title: Text("WhatsApp"),
-          bottom: TabBar(
-            tabs: [
-              Tab(text: "Conversas"),
-              Tab(text: "Status"),
-              Tab(text: "Chamadas"),
+          title: Text("Instagram"),
+          
+          // bottom: TabBar(
+          //   tabs: [
+          //     Tab(text: "Conversas"),
+          //     Tab(text: "Status"),
+          //     Tab(text: "Chamadas"),
               
-            ],
-          ),
+          //   ],
+          // ),
           actions: [
-            IconButton(onPressed: () {}, icon: Icon(Icons.camera_alt_outlined)),
+            // IconButton(onPressed: () {}, icon: Icon(Icons.camera_alt_outlined)),
             IconButton(onPressed: () {
               Navigator.pushNamed(context, "/noti");
-            }, icon: Icon(Icons.search)),
+            }, icon: Icon(Icons.favorite)),
             IconButton(onPressed: () {
               Navigator.pushNamed(context, '/config');
-            }, icon: Icon(Icons.more_vert))
+            }, icon: Icon(Icons.send))
           ],
         ),
         body: TabBarView(
